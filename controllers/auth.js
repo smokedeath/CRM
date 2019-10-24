@@ -27,8 +27,6 @@ module.exports.login = async function (req, res) {
             message: 'User or Password not found'
         });
     }
-
-
 };
 
 module.exports.register = async function (req, res) {
