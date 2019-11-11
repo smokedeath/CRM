@@ -15,7 +15,7 @@ export class AuthService {
       .pipe(
         tap(
           (d) => {
-            const token = d.toString();
+            const token = d['token'];
             localStorage.setItem('auth-token', token);
             this.setToken(token);
           }
@@ -40,7 +40,14 @@ export class AuthService {
     localStorage.clear();
   }
 
-  registration(){
-    //
+  registration(user: User){
+    return this.http.post('/api/auth/register', user)
+      .pipe(
+        tap(
+          (d) => {
+            //
+          }
+        )
+      );
   }
 }
