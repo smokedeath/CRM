@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-positions-form',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./positions-form.component.scss']
 })
 export class PositionsFormComponent implements OnInit {
-
-  constructor() { }
+  @Input('categoryId') categoryId: string;
+  constructor() {
+  }
 
   ngOnInit() {
   }

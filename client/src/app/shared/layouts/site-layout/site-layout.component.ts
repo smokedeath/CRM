@@ -3,8 +3,6 @@ import {AuthService} from "../../services/auth.service";
 import {Router} from "@angular/router";
 import {MaterialService} from "../../classes/material.service";
 
-
-
 @Component({
   selector: 'app-site-layout',
   templateUrl: './site-layout.component.html',
