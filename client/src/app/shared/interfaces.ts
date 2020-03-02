@@ -13,3 +13,12 @@ export interface Category {
 export interface Message {
   message: string
 }
+
+export interface Position {
+  name: string;
+  cost: number;
+  user?: string;
+  category: string;
+  _id?: string;
+  _quantity: number
+}
