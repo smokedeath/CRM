@@ -6,7 +6,7 @@ const passport = require('passport');
 const jwt = passport.authenticate('jwt', {session: false});
 
 
-router.get('/:category', jwt, controller.getByCategoryId);
+router.get('/:categoryId', jwt, controller.getByCategoryId);
 router.post('/', jwt, controller.create);
 router.patch('/:id', jwt, controller.update);
 router.delete('/:id', jwt, controller.remove);
