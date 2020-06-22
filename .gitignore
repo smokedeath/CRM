@@ -2,12 +2,15 @@
 
 # compiled output
 /dist
+client/dist
 /dist-server
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
+client/node_modules
+config/keys.dev.js
 
 # IDEs and editors
 .vscode/
